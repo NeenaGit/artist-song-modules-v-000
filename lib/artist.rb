@@ -8,10 +8,10 @@ class Artist
 
   extend Findable
 
-  def initialize
-    @@artists << self
-    @songs = []
-  end
+  # def initialize
+  #   @@artists << self
+  #   @songs = []
+  # end
 
   def self.all
     @@artists
