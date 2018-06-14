@@ -16,7 +16,8 @@ class Song
     @artist = artist
   end
 
-  extend Memorable
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
 
   include Paramable
 
