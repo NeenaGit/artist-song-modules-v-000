@@ -21,6 +21,8 @@ class Song
 
   extend Memorable
 
+  include Paramable
+
   # def to_param
   #   name.downcase.gsub(' ', '-')
   # end
