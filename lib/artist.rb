@@ -6,9 +6,11 @@ class Artist
 
   @@artists = []
 
-  def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
-  end
+  extend Findable
+
+  # def self.find_by_name(name)
+  #   @@artists.detect{|a| a.name == name}
+  # end
 
   def initialize
     @@artists << self
@@ -20,7 +22,7 @@ class Artist
   end
 
   extend Memorable
-  
+
 
   def add_song(song)
     @songs << song
