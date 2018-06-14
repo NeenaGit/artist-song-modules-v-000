@@ -11,9 +11,6 @@ class Song
   end
 
   extend Findable
-  # def self.find_by_name(name)
-  #   @@songs.detect{|a| a.name == name}
-  # end
 
   def artist=(artist)
     @artist = artist
@@ -23,13 +20,6 @@ class Song
 
   include Paramable
 
-  # def to_param
-  #   name.downcase.gsub(' ', '-')
-  # end
-
-  # def self.count
-  #   self.all.count
-  # end
 
   def self.all
     @@songs
